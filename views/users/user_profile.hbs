@@ -1,0 +1,17 @@
+
+<div class="container-fluid">
+    {{>user_messages}}
+</div>
+
+    <div class="row justify-content-center mt-2">
+        <h2> First Name: {{currentUser.name.first}} </h2>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <h2> Last Name: {{currentUser.name.last}} </h2>
+    </div>
+
+    <div class="navbar navbar-light justify-content-center mt-2">
+        <a class="nav-item nav-link btn-outline-dark col-auto mr-2 mb-1" href="/users/edit_profile">Change Password</a>
+    </div>
+
+

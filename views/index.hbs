@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row row-cols-8 justify-content-center">
+        <div class="col-8 col-md-5 btn-group-vertical" role="group">
+            {{#each menuList}}
+                <a class="mt-3 btn btn-sm btn-block btn-outline-dark"
+                   href="/menu/view?id={{id}}">{{title}}</a>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<br/><h1 text align="center" style="color: maroon">Welcome to Delicious!</h1><br/>
+<div class="container-fluid m-2">
+    {{> user_messages}}
+</div>
+<p class="center" align="center" style="font-size: 160% "> Healthy meals, happy customers!</p>
+
+
+

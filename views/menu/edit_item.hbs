@@ -1,0 +1,24 @@
+<form method="post" action="/menu/save">
+    <input type="hidden" name="isCreate"
+           value="{{#if isCreate}}create{{else}}update{{/if}}"/></br>
+    </br>
+    <p class="center" align="center">
+        Order Number: {{{menuId}}}
+        <input type="hidden" name="menuId" value="{{menuId}}"/>
+    </p>
+    <p class="center" align="middle">
+        Item: <input type="text", name="item" value="{{menuTitle}}"/><br/>
+    </p>
+
+        <p class="center" align="middle">
+            Price: <input type="text", name="price" value="{{menuPrice}}"/><br/>
+        </p>
+
+        <div class="align-content-center">
+
+            <input class="btn center btn-outline-dark col-3" type="submit" value="Update"/>
+
+        </div>
+</form>
+
+

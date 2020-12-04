@@ -1,0 +1,60 @@
+<div class="container-fluid mt-2">
+    <div class="row justify-content-center">
+        <p>Please fill in this form to create an account.</p>
+    </div>
+</div>
+<div class="container-fluid m-2">
+    {{> user_messages}}
+</div>
+<form method="post", action="/users/register">
+    <div class="container-fluid">
+        <div class="form-group row justify-content-center mb-0">
+            <div class="col-1 col-md-3"></div>
+            <div class="col-9 col-md-4 text-left font-weight-bold">
+                <label class="col-form-label" for="firstName">First Name: </label>
+            </div>
+            <div class="col-1 col-md-3"></div>
+            <div class="col-9 col-md-4">
+                <input class="form-control" id="firstName" type="text" name="first" placeholder="First name" required/>
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-center mb-0">
+            <div class="col-1 col-md-3"></div>
+            <div class="col-9 col-md-4 text-left font-weight-bold">
+                <label class="col-form-label" for="lastName">Last Name: </label>
+            </div>
+            <div class="col-1 col-md-3"></div>
+            <div class="col-9 col-md-4">
+                <input class="form-control" id="lastName" type="text" name="last" placeholder="Last name" required/>
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-center mb-0">
+            <div class="col-1 col-md-3"></div>
+            <div class="col-9 col-md-4 text-left font-weight-bold">
+                <label class="col-form-label" for="password">Password: </label>
+            </div>
+            <div class="col-1 col-md-3"></div>
+            <div class="col-9 col-md-4">
+                <input class="form-control" id="password" type="password" name="password" placeholder="Password" required/>
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-center mb-0">
+        <div class="col-1 col-md-3"></div>
+        <div class="col-9 col-md-4 text-left font-weight-bold">
+            <label class="col-form-label" for="email">Email: </label>
+        </div>
+        <div class="col-1 col-md-3"></div>
+        <div class="col-9 col-md-4">
+            <input class="form-control" id="email" type="email" name="email" placeholder="email@example.com" required/>
+        </div>
+    </div>
+
+    <div class="form-group row justify-content-center mt-2">
+        <input class="btn center btn-outline-dark col-sm-1" type="submit" value="Submit"/>
+    </div>
+
+    </div>
+</form>

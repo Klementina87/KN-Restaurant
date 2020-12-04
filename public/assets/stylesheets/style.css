@@ -1,0 +1,44 @@
+body {
+  font: 14px Lato, Helvetica, Arial, sans-serif;
+  background: papayawhip;
+}
+
+h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: medium;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.navbar {
+  text-align: center;
+  font-family: Microsoft JhengHei;
+  color: darkred;
+  font-size: small;
+}
+
+a {
+  color: black;
+  text-align: center;
+  font-family: Microsoft JhengHei;
+  font-size: medium;
+
+}
+
+.navbar-text {
+  font-size:x-large;
+}
+
+.navbar-toggler {
+  margin-top:5px;
+  margin-bottom: 10px;
+}

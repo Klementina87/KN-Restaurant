@@ -1,0 +1,42 @@
+<header class="page-header">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark border rounded mb-5 responsive">
+
+        <a class="navbar-brand" href="/"><img src="/assets/images/logoKN2.png" class="img responsive"
+                                               style="width: 90px; height: 75px">
+                                            <i data-feather="" ></i></a>
+
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <span class="navbar-text col "></span>
+
+        {{#unless loggedIn}}
+            <a class="nav-item nav-link btn-outline-light col-auto mr-2 mb-1{{isLoginActive}}" href="/users/login">Login</a>
+            <a class="nav-item nav-link btn-outline-light col-auto mr-2 mb-1{{isRegisterActive}}" href="/users/register">Register</a>
+        {{else}}
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle  mr-2 mb-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Add item
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="user-select-auto dropdown-item-text " href="/menu/add">Breakfast</a>
+                    <a class="user-select-auto dropdown-item-text" href="/menu/add">Lunch</a>
+                    <a class="user-select-auto dropdown-item-text" href="/menu/add">Dinner</a>
+                    <a class="user-select-auto dropdown-item-text" href="/menu/add">Desserts</a>
+                    <a class="user-select-auto dropdown-item-text" href="/menu/add">Beverages</a>
+                </div>
+            </div>
+                <a class="nav-item nav-link btn-outline-light col-auto mr-2 mb-1{{isViewAllActive}}" href="/menu/view_all">My items</a>
+
+            <a class="nav-item nav-link btn-outline-light col-auto mr-2 mb-1" href="/users/user_profile" class="col-auto text-white">{{currentUser.name.first}}'s Profile </a>
+            <a class="nav-item nav-link btn-outline-light col-auto mr-2 mb-1" href="/users/logout">Logout</a>
+        {{/unless}}
+        </div>
+    </nav>
+
+</header>
+

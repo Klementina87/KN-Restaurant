@@ -1,0 +1,23 @@
+<form method="post" action="/menu/destroy">
+    <div class="container-fluid">
+        <div class="align-content-center">
+    <p class="center" align="center">
+        Are you sure you want to delete?
+    </p>
+    <p class="center" align="center">
+        Order: {{menuId}}
+        <input type="hidden" name="menuId" value="{{menuId}}"/>
+    </p>
+    <p class="center" align="center">
+        Item: {{menuTitle}}
+        <input type="hidden" name="menuTitle" value="{{menuTitle}}"/>
+    </p>
+
+            <div class="align-content-center">
+                <input class="btn center btn-outline-dark col-2" type="submit" value="Delete item"/>
+    </div>
+        </div>
+    </div>
+</form>
+
+

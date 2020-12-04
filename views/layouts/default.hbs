@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel='stylesheet' href='/assets/stylesheets/style.css'/>
+
+
+    {{#each styles}}
+        <link rel='stylesheet' href={{this}} />
+    {{/each}}
+</head>
+<body>
+
+    {{> header }}
+
+<img src="/assets/images/b.jpg " alt="front" class="center" align="row responsive center" style="width: 368px; height: 200px" />
+    {{{ body }}}
+
+<script src="/assets/vendor/jquery/jquery.min.js"> </script>
+<script src="/assets/vendor/popper.js/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/feather-icons/feather.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+<footer class = "footer">
+    <br class = "container">
+    </br> <span class = "text-muted"> ©2020 Klementina Nikov</span>
+    </div>
+</footer>
+</html>
